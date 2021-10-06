@@ -1,0 +1,15 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="margin">8dp</dimen>
+    <dimen name="text_16">16sp</dimen>
+    <dimen name="text_24">24sp</dimen>
+    <dimen name="padding_20dp">20dp</dimen>
+    <dimen name="text_20">20sp</dimen>
+
+    <!-- fragment_first.xml-->
+    <dimen name="corner_radius">10dp</dimen>
+    <dimen name="elevation_action_card">10dp</dimen>
+    <dimen name="padding_action_card">20dp</dimen>
+
+    <!-- fragment_second.xml-->
+</resources>
