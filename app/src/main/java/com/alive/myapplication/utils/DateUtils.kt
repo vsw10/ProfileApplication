@@ -1,39 +1,13 @@
 package com.alive.myapplication.utils
 
 import android.content.Context
-import android.os.Build
 import android.util.Log
-import androidx.annotation.RequiresApi
 import com.alive.myapplication.R
-import org.joda.time.PeriodType
 import org.joda.time.PeriodType.yearMonthDay
 import java.text.SimpleDateFormat
-import java.time.LocalDate
-import java.time.Period
 import java.util.*
 
 object DateUtils {
-
-    /*@RequiresApi(Build.VERSION_CODES.O)
-    fun getAgeNumber(year:Int, month:Int, dayOfMonth:Int) : String {
-            val months: Int = Period.between(
-                LocalDate.of(year,month,dayOfMonth),
-                LocalDate.now()
-            ).months
-            val years:Int = Period.between(
-                LocalDate.of(year,month,dayOfMonth),
-                LocalDate.now()
-            ).years
-
-       *//* val period: org.joda.time.Period = org.joda.time.Period(startdate, endDate, yearMonthDay())
-        val totalyears: Int = period.getYears()
-        val totalMonths: Int = period.getMonths()
-        val totalDays: Int = period.getDays()*//*
-        Log.d("vs",
-            "Year $years Month $months")
-
-        return ""
-    }*/
 
     fun getAgeNumber(context: Context, selectedDob :Long):String {
         val calendar = Calendar.getInstance()

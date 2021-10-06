@@ -25,6 +25,7 @@ import java.util.*
 
 /**
  * A simple [Fragment] subclass as the default destination in the navigation.
+ * Fragment allows user to enter first name , last name and dob
  */
 class FirstFragment : Fragment() {
 
@@ -81,8 +82,6 @@ class FirstFragment : Fragment() {
                 selectedDate = getCurrentDay
             }
             Log.d("vs","Todays Date ${getCurrentDay}")
-
-               // pick.headerText
         }
         binding.nextButton.setOnClickListener {
             binding.calendarTextView.let {
@@ -106,6 +105,7 @@ class FirstFragment : Fragment() {
         firstFragmentDisposables.clear()
     }
 
+    // Checks for EditText Input
     private val loginTextWatcher:TextWatcher = object :TextWatcher {
         override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
         }

@@ -18,6 +18,7 @@ import io.reactivex.rxjava3.disposables.CompositeDisposable
 
 /**
  * A simple [Fragment] subclass as the second destination in the navigation.
+ * It displays the entered credentials by the user and dob
  */
 class SecondFragment : Fragment() {
 
@@ -43,7 +44,8 @@ class SecondFragment : Fragment() {
         val firstFragmentViewModel =  activity?.run {
             ViewModelProviders.of(this).get(FirstFragmentViewModel::class.java)
         }
-        Log.d("vs","SecondFragment onViewCreated ${firstFragmentViewModel?.data?.value?.first}")
+        Log.d("vs",
+            "SecondFragment onViewCreated ${firstFragmentViewModel?.data?.value?.first}")
         val firstName = firstFragmentViewModel?.data?.value?.let {
             Log.d("vs",
                 "First Name ${it.first}")
